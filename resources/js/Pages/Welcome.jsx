@@ -1,4 +1,7 @@
-import { Head, Link } from '@inertiajs/react';
+import { Head, Link } from "@inertiajs/react";
+import * as React from "react";
+import DangerButton from "@/components/DangerButton";
+import NavBar from "@/components/NavBar";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
@@ -14,6 +17,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
     return (
         <>
+            {/* <div>
+            <h1>Welcome to the Application</h1>
+            {canLogin && <a href="/login">Login</a>}
+            {canRegister && <a href="/register">Register</a>}
+        </div> */}
+
             <Head title="Welcome" />
             <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
                 <img
@@ -356,6 +365,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
                 </div>
             </div>
+
         </>
     );
 }
+
+

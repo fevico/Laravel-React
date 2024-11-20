@@ -12,7 +12,20 @@ export default function AuthenticatedLayout({ header, children }) {
         useState(false);
 
     return (
+        
         <div className="min-h-screen bg-gray-100">
+            {/* <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+    <NavLink href={route('dashboard')} active={route().current('dashboard')}>
+        Dashboard
+    </NavLink>
+    <NavLink href={route('profile')} active={route().current('profile.edit')}>
+        Profile
+    </NavLink>
+    <NavLink href={route('logout')} method="post" as="button">
+        Logout
+    </NavLink>
+</div> */}
+
             <nav className="border-b border-gray-100 bg-white">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex h-16 justify-between">
